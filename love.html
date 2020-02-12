@@ -14,7 +14,7 @@
             font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
             /* background: #ae79a7; */
             background-image:url('./background.jpg');
-            color: #CFEBE4;
+/*             color: #CFEBE4; */
             font-size: 18px;
             line-height: 2;
             letter-spacing: 1.2px;
@@ -78,6 +78,8 @@
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #EFEBDC; font-size: 30px">
     <br/>
+	<br/>
+	<br/>
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
@@ -107,7 +109,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
 			//想说的话
-            S.UI.simulate("猪猪|I'm|So|Lucky|to|Meet|You|#countdown 3|Happy Valentine's Day");
+            S.UI.simulate("猪猪，我来啦|不知道给你买什么| 所以写了一晚上代码| I'm|So|Lucky|to|Meet|You| #countdown 3|情人节快乐~");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
