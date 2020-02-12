@@ -76,7 +76,7 @@
 <body>
 
 <canvas class="canvas" width="1820" height="905"></canvas>
-<p class="text" style="color: #ed3073;">
+<p class="text" style="color: #EFEBDC; font-size: 30px">
     <br/>
     <span id="span_dt_dt"></span>
 </p>
@@ -96,7 +96,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        span_dt_dt.innerHTML = daysold + " 天" + hrsold + " 小时" + minsold + " 分" + seconds + " 秒";
     }
 
     show_date_time();
@@ -107,7 +107,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
 			//想说的话
-            S.UI.simulate("猪猪|I'm|So|Lucky|to|Meet|You|#countdown 3|#time");
+            S.UI.simulate("猪猪|I'm|So|Lucky|to|Meet|You|#countdown 3|Happy Valentine's Day");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
