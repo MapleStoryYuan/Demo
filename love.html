@@ -12,9 +12,8 @@
 
         body {
             font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-            background-color: #ED3B6D;
             background-image:url('./background.jpg');
-            font-size: 18px;
+            font-size: 10px;
             line-height: 2;
             letter-spacing: 1.2px;
             margin: 0;
@@ -26,19 +25,14 @@
         }
 
         .body--ready {
-            background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            /* background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%); */
         }
 
-        .text {
-            position: fixed;
-            bottom: 100px;
-            text-align: center;
-            width: 100%;
-        }
+        
 
         .canvas {
             margin: 0 auto;
@@ -55,17 +49,9 @@
 
         .text {
             position: fixed;
-            bottom: 80px;
-            text-align: center;
-            width: 100%;
-            font-weight: bold;
-        }
-
-        .text-right {
-            position: fixed;
-            bottom: 50px;
+            bottom: 15px;
             text-align: right;
-            width: 100%;
+            width: 94%;
             font-weight: bold;
         }
     </style>
@@ -74,11 +60,15 @@
 
 <body>
 
-<canvas class="canvas" width="1820" height="905"></canvas>
-<p class="text" style="color: #EFEBDC; font-size: 30px">
+<canvas class="canvas" width="895" height="549"></canvas>
     <br/>
-	<br/>
-	<br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+<p class="text" style="color: #EFEBDC; font-size: 20px">
+    
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
@@ -97,7 +87,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = "想你的 "+ daysold + " 天" + " " + hrsold + " 小时" + " " + minsold + " 分" + " " + seconds + " 秒"
+        span_dt_dt.innerHTML = "想你的 "+ daysold + " 天" + " " + hrsold + " 小时" + " " + minsold + " 分" + " " + seconds + " 秒  ❤"
     }
 
     show_date_time();
